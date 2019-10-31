@@ -22,7 +22,10 @@
 ### code chunk number 1: dataload
 ###################################################
 
-library(devtools)
+if (!require("devtools")) {
+    install.packages("devtools")
+    library(devtools)
+}
 
 install_github("bonorico/comet")
 
